@@ -18,6 +18,7 @@ function Movies() {
     })
   },[])
   let handleOnChange =(event)=>{
+    event.preventDefault()
     let title = event.target.value
     let selectedMovie = movies.find(movie => {
       console.log("*** MOVIE 2***")
@@ -43,7 +44,7 @@ function Movies() {
               <h4><span className="color">Release Date:</span> {selected.release_date}</h4>
               <h4><span className="color">Release Date:</span> {selected.description}</h4>
           </div>
-        ) : null}
+        ) : "Not Found"}
     </div>
   );
 }

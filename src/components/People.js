@@ -40,7 +40,6 @@ function People() {
           <label>
             <input type="text" onChange={handleOnChange}></input>
             <button type="submit" >Submit</button>
-
           </label>
         </form>
   
@@ -52,7 +51,7 @@ function People() {
                 <h4><span className="color">Hair Color:</span> {selectedPerson.hair_color}</h4>
 
             </div>
-              ) : null} 
+              ) : "Not Found"} 
         </div>
     );
   }

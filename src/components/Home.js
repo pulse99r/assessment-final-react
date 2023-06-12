@@ -10,6 +10,7 @@ function Home() {
   return (
     <div className="home">
       <h1>Welcome to GhibliApp</h1>
+      <p>This is the final app for Pursuit's Core Module 3.  Have fun testing it out!!</p>
     </div>
   );
 }
